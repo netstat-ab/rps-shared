@@ -1,14 +1,14 @@
-export interface Player {
+export interface PlayerDto {
   id: number
   name: string
 }
 
 export interface GetPlayerResponseDto {
-  player: Player | null
+  player: PlayerDto | null
 }
 
 export interface CreatePlayerResponseDto {
-  player: Player
+  player: PlayerDto
 }
 
 export interface CreatePlayerRequestDto {
