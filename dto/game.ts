@@ -1,3 +1,6 @@
+import { PlayerDto } from "./player"
+
+
 export type Choice = 'rock' | 'paper' | 'scissors'
 
 export interface MakeTurnRequestDto {
@@ -10,7 +13,7 @@ export interface RoundDto {
 
 export interface GameBriefResponseDto {
   id: number
-  players: number[]
+  players: PlayerDto[]
 }
 
 export interface GameResponseDto extends GameBriefResponseDto {
