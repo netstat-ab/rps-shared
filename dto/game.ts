@@ -4,7 +4,7 @@ export interface MakeTurnRequestDto {
   choice: Choice
 }
 
-export interface Round {
+export interface RoundDto {
   turns: Array<[number, Choice]>
 }
 
@@ -14,5 +14,5 @@ export interface GameBriefResponseDto {
 }
 
 export interface GameResponseDto extends GameBriefResponseDto {
-  rounds: Round[]
+  rounds: RoundDto[]
 }
