@@ -18,4 +18,5 @@ export interface GameBriefResponseDto {
 
 export interface GameResponseDto extends GameBriefResponseDto {
   rounds: RoundDto[]
+  activeRound: RoundDto | null
 }
